@@ -16,19 +16,26 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- header -->
-    <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 fixed-top">
-      <a href="#profile" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto ms-5 link-body-emphasis text-decoration-none">
-        <img src="./Assets/favicon(2).ico" alt="Logo Icon" height="30" />
-      </a>
-      <ul class="nav nav-pills me-5">
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="#more" class="nav-link">More</a></li>
-      </ul>
-    </header>
-    <!-- header done -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a href="#profile" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto ms-5 link-body-emphasis text-decoration-none">
+          <img src="./Assets/favicon(2).ico" alt="Logo Icon" height="30" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="nav">
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#more" class="nav-link">More</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar  -->
     <!-- Profile -->
     <div class="px-5 py-5 my-5 text-center" id="profile">
       <img class="d-block mx-auto mb-4" id="photo-profile" src="./Assets/profile.png" alt="Photo Profile" width="200" height="200" />
@@ -36,7 +43,7 @@
       <div class="col-lg-6 mx-auto">
         <p class="lead my-4">I am Telecommunication graduate who has interest in web development, computer network, and radio frequency.</p>
       </div>
-      <div class="mt-5 pt-5"><img src="./Assets/Graphic Web, network, rf.png" alt="Graphic Web, Network, rf" width="600" height="300" /></div>
+      <div class="mt-5 pt-5"><img class="col-lg-6 col-md-9 col-sm-9 col-9" src="./Assets/Graphic Web, network, rf.png" alt="Graphic Web, Network, rf" width="600" height="300" /></div>
     </div>
     <!-- Profile done -->
     <!-- About -->
@@ -55,8 +62,8 @@
     <!-- About done -->
     <!-- Skills -->
     <div class="px-5 py-5 text-center" id="skills">
-      <div class="row row-cols-1 row-cols-md-3 mb-3 mx-5 text-center">
-        <div class="col">
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 mb-3 mx-5 text-center">
+        <div class="col first">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <img src="./Assets/web development.png" alt="Web Development" height="50" />
@@ -82,7 +89,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col second">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
               <img src="./Assets/computer networks.png" alt="Computer Network" height="50" />
@@ -104,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col third">
           <div class="card mb-4 rounded-3 shadow-sm border-primary">
             <div class="card-header py-3">
               <img src="./Assets/radio frequency.png" alt="Radio frequency" height="50" />
