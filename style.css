@@ -39,3 +39,11 @@ text {
 #skills .card-title {
   color: green;
 }
+@media (min-width: 992px) {
+  .col.first,
+  .col.second,
+  .col.third {
+    display: grid;
+    gap: 10px;
+  }
+}
