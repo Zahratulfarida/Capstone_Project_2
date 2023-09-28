@@ -47,3 +47,9 @@ text {
     gap: 10px;
   }
 }
+@media (max-width: 538px) {
+  .contact-box {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
